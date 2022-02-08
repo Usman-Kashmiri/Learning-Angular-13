@@ -1,0 +1,9 @@
+<h2 class="component-heading">stylebinding Component</h2>
+
+<h3>Type any color to change input field background color:</h3>
+<input [style.backgroundColor]="myInput.value" type="text" #myInput (keyup)="myInput.value">
+
+<h3>Type any color to get text with color respective color:</h3>
+<input type="text" #myInput2 (keyup)="myInput2.value">
+
+<h3 [style.color]="myInput2.value">{{myInput2.value}}</h3>

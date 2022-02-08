@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./switch-cases.component.css']
 })
 export class SwitchCasesComponent implements OnInit {
-  color="green";
+  colour="";
   constructor() { }
 
   ngOnInit(): void {

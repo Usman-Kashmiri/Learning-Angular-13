@@ -1,0 +1,42 @@
+<h2 class="component-heading">For-Loop Component</h2>
+
+<h2>For Loop with array:</h2>
+
+<ul>
+    <li *ngFor="let londa of shapatar">{{londa}}</li>
+</ul>
+
+<h2>For Loop with object:</h2>
+
+<ul>
+    <li>Name: {{gral.name}}</li>
+    <li>Age: {{gral.age}}</li>
+    <li>Class: {{gral.class}}</li>
+</ul>
+
+<h2>For Loop with array of objects:</h2>
+
+<table border="2">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Class</th>
+    </tr>
+    <tr *ngFor="let student of students">
+        <td>{{student.name}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.class}}</td>
+    </tr>
+</table>
+
+<h2>Nested For Loop with 2D array:</h2>
+
+<ul *ngFor="let student of students">
+    <li>{{student.name}}</li>
+    <li>{{student.age}}</li>
+    <li>{{student.class}}</li>
+    <li>Subjects:</li>
+    <ol>
+        <li *ngFor="let subject of student.subjects">{{subject}}</li>
+    </ol>
+</ul>

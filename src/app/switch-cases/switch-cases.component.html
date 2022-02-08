@@ -1,8 +1,18 @@
-<h2>switch-cases Component</h2>
+<h2 class="component-heading">switch-cases Component</h2>
 
-<div [ngSwitch]="color">
-    <h2 *ngSwitchCase="'green'" style="color: green;">Yeh Color yellow bhi nahi hai</h2>
-    <h2 *ngSwitchCase="'red'" style="color: red;">Yeh Color blue bhi nahi hai</h2>
-    <h2 *ngSwitchCase="'yellow'" style="color: yellow;">Yeh Color green bhi nahi hai</h2>
-    <h2 *ngSwitchCase="'blue'" style="color: blue;">Yeh Color red bhi nahi hai</h2>
+<h2>Pick a Color:</h2>
+
+<select #selectList2 name="selectColor" (change)="colour=selectList2.value">
+    <option>Select a color</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="noColor">No Color</option>
+</select>
+
+<div [ngSwitch]="colour">
+    <h2 *ngSwitchCase="'green'" style="color: green;">Yeh Color blue bhi nahi hai...!</h2>
+    <h2 *ngSwitchCase="'red'" style="color: red;">Yeh Color green bhi nahi hai...!</h2>
+    <h2 *ngSwitchCase="'blue'" style="color: blue;">Yeh Color red bhi nahi hai...!</h2>
+    <h2 *ngSwitchDefault style="color: teal;">Yeh Color brown bhi nahi hai...!</h2>
 </div>

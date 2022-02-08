@@ -9,5 +9,5 @@ export class AppComponent {
   title = '13.1.4';
   count=0;
   show=true;
-  color="green";
+  color='';
 }

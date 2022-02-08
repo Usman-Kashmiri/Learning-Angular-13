@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+.component-heading {
+    font-family: cursive;
+    color: green;
+}
+
+.component-heading::before {
+    content: '<!--';
+}
+
+.component-heading::after {
+    content: '-->';
+}
