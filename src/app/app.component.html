@@ -1,43 +1,46 @@
-<h1>Learning Angular v{{title}}</h1>
+<app-navbar></app-navbar>
 
-<h2 class="component-heading">App Component</h2>
+<div class="container">
+    <h1>Learning Angular v{{title}}</h1>
 
-<h3>Type something to get instant value without submit button:</h3>
+    <h2 class="component-heading">App Component</h2>
 
-<input type="text" #myInput (keyup)="myInput.value">
+    <h3>Type something to get instant value without submit button:</h3>
 
-<h2>{{myInput.value}}</h2>
+    <input type="text" #myInput (keyup)="myInput.value">
 
-<h3>Click this button to increament count:</h3>
+    <h2>{{myInput.value}}</h2>
 
-<button (click)="count=count+1">Click here</button>
+    <h3>Click this button to increament count:</h3>
 
-<h2>{{count}}</h2>
+    <button (click)="count=count+1">Click here</button>
 
-<h3>Toggle button with *ngIf condition:</h3>
+    <h2>{{count}}</h2>
 
-<button (click)="show==true ? show=false : show=true">Click me to Toggle below statement</button>
+    <h3>Toggle button with *ngIf condition:</h3>
 
-<span *ngIf="show; then ifStatement else elseStatement"></span>
+    <button (click)="show==true ? show=false : show=true">Click me to Toggle below statement</button>
 
-<ng-template #ifStatement>
-    <h2>Henlo Kanshinf...!</h2>
-</ng-template>
+    <span *ngIf="show; then ifStatement else elseStatement"></span>
 
-<ng-template #elseStatement>
-    <h2>Henlo Peter puttr..!</h2>
-</ng-template>
+    <ng-template #ifStatement>
+        <h2>Henlo Kanshinf...!</h2>
+    </ng-template>
 
-<h3>*ngIfElse condition:</h3>
+    <ng-template #elseStatement>
+        <h2>Henlo Peter puttr..!</h2>
+    </ng-template>
 
-<h2>Pick a Color:</h2>
+    <h3>*ngIfElse condition:</h3>
 
-<input #red type="radio" (click)="color=red.value" name="color" value="red"><label> Red</label>
-<input #green type="radio" (click)="color=green.value" name="color" value="green"><label> Green</label>
-<input #blue type="radio" name="color" (click)="color=blue.value" value="blue"><label> Blue</label>
-<input #noColor type="radio" name="color" (click)="color=noColor.value" value="noColor"><label> No Color</label>
+    <h2>Pick a Color:</h2>
 
-<!-- <select #selectList name="selectColor" (change)="color=selectList.value">
+    <input #red type="radio" (click)="color=red.value" name="color" value="red"><label> Red</label>
+    <input #green type="radio" (click)="color=green.value" name="color" value="green"><label> Green</label>
+    <input #blue type="radio" name="color" (click)="color=blue.value" value="blue"><label> Blue</label>
+    <input #noColor type="radio" name="color" (click)="color=noColor.value" value="noColor"><label> No Color</label>
+
+    <!-- <select #selectList name="selectColor" (change)="color=selectList.value">
     <option>Select a color</option>
     <option value="red">Red</option>
     <option value="green">Green</option>
@@ -45,29 +48,30 @@
     <option value="noColor">No Color</option>
 </select> -->
 
-<ng-template [ngIf]="color=='red'">
-    <h2>Red color is selected</h2>
-</ng-template>
-<ng-template [ngIf]="color=='green'">
-    <h2>Green color is selected</h2>
-</ng-template>
-<ng-template [ngIf]="color=='blue'">
+    <ng-template [ngIf]="color=='red'">
+        <h2>Red color is selected</h2>
+    </ng-template>
+    <ng-template [ngIf]="color=='green'">
+        <h2>Green color is selected</h2>
+    </ng-template>
+    <ng-template [ngIf]="color=='blue'">
+        <h2>Blue color is selected</h2>
+    </ng-template>
+    <ng-template [ngIf]="color=='noColor'">
+        <h2>Pata nahi kun sa color hai, Yeh color <q>brown</q> toh bilkul nahi hai...!</h2>
+    </ng-template>
+
+    <!-- Yet has to be corrected -->
+    <!-- <ng-template [ngIf]="color=='blue'" [ngIfElse]="unkownColor">
     <h2>Blue color is selected</h2>
-</ng-template>
-<ng-template [ngIf]="color=='noColor'">
-    <h2>Pata nahi kun sa color hai, Yeh color <q>brown</q> toh bilkul nahi hai...!</h2>
-</ng-template>
+    </ng-template>
+    <ng-template #unkownColor>
+        <h2>Pata nahi kun sa color hai, Yeh color <q>brown</q> toh bilkul nahi hai...!</h2>
+    </ng-template> -->
 
-<!-- Yet has to be corrected -->
-<!-- <ng-template [ngIf]="color=='blue'" [ngIfElse]="unkownColor">
-    <h2>Blue color is selected</h2>
-</ng-template>
-<ng-template #unkownColor>
-    <h2>Pata nahi kun sa color hai, Yeh color <q>brown</q> toh bilkul nahi hai...!</h2>
-</ng-template> -->
+    <app-switch-cases></app-switch-cases>
 
-<app-switch-cases></app-switch-cases>
+    <app-for-loop></app-for-loop>
 
-<app-for-loop></app-for-loop>
-
-<app-stylebinding></app-stylebinding>
+    <app-stylebinding></app-stylebinding>
+</div>
