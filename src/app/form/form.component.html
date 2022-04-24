@@ -1,0 +1,26 @@
+<section class="form-section">
+    <form #registrationForm="ngForm" (ngSubmit)="formData(registrationForm.value)">
+        <h3>Registeration</h3>
+      
+        <label>Username</label>
+        <input type="text" ngModel name="username" placeholder="Enter your Username here">
+
+        <label>Email Address</label>
+        <input type="email" ngModel name="email" placeholder="Enter your Email Address here">
+
+        <label>Password</label>
+        <input type="password" ngModel name="password" placeholder="Enter your Password here">
+      
+        <label>Confirm Password</label>
+        <input type="password" ngModel name="confirmPassword" placeholder="Confirm your Password">
+      
+        <button>Register</button>
+      </form>
+
+      <!-- Output -->
+      <div class="form-output">
+          <h3><span>Your Username is:</span> {{userData.username}}</h3>
+          <h3><span>Your Email Address is:</span> {{userData.email}}</h3>
+          <h3><span>Your password is:</span> {{userData.password}}</h3>
+      </div>
+</section>

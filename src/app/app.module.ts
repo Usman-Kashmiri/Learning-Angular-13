@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { SwitchCasesComponent } from './switch-cases/switch-cases.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormComponent } from './form/form.component';
+// Form Module
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     SwitchCasesComponent,
     ForLoopComponent,
     StylebindingComponent,
-    NavbarComponent
+    NavbarComponent,
+    FormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
