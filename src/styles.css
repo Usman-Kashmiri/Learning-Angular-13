@@ -17,3 +17,7 @@
 .component-heading::after {
     content: '-->';
 }
+
+button {
+    cursor: pointer;
+}
