@@ -11,6 +11,8 @@ import { FormsModule } from "@angular/forms";
 import { ToggleBtnComponent } from './toggle-btn/toggle-btn.component';
 import { ListProgramComponent } from './list-program/list-program.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
     FormComponent,
     ToggleBtnComponent,
     ListProgramComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
