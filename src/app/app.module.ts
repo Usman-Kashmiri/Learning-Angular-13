@@ -9,6 +9,7 @@ import { FormComponent } from './form/form.component';
 // Form Module
 import { FormsModule } from "@angular/forms";
 import { ToggleBtnComponent } from './toggle-btn/toggle-btn.component';
+import { ListProgramComponent } from './list-program/list-program.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ToggleBtnComponent } from './toggle-btn/toggle-btn.component';
     StylebindingComponent,
     NavbarComponent,
     FormComponent,
-    ToggleBtnComponent
+    ToggleBtnComponent,
+    ListProgramComponent
   ],
   imports: [
     BrowserModule,

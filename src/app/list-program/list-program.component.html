@@ -1,0 +1,10 @@
+<h2 class="component-heading">List Program Component</h2>
+<br><br>
+<input type="text" #listItem> <br><br>
+<button (click)="AddListItem(listItem.value)">Add List Item</button>
+<br>
+<ul>
+    <br>
+    <li style="margin-bottom: 15px;" *ngFor="let item of list" #items>{{item}} <button (click)="this.items.remove()">remove item</button></li>
+    <br>
+</ul>
