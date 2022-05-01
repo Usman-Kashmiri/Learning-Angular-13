@@ -10,6 +10,7 @@ import { FormComponent } from './form/form.component';
 import { FormsModule } from "@angular/forms";
 import { ToggleBtnComponent } from './toggle-btn/toggle-btn.component';
 import { ListProgramComponent } from './list-program/list-program.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ListProgramComponent } from './list-program/list-program.component';
     NavbarComponent,
     FormComponent,
     ToggleBtnComponent,
-    ListProgramComponent
+    ListProgramComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
