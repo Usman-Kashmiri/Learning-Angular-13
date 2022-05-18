@@ -13,6 +13,7 @@ import { ListProgramComponent } from './list-program/list-program.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { SecondChildComponent } from './second-child/second-child.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ChildComponent } from './child/child.component';
     ListProgramComponent,
     TwoWayBindingComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    SecondChildComponent
   ],
   imports: [
     BrowserModule,

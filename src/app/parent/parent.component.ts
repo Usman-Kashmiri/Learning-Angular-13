@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  ParentsData=0;
+  ParentsData = 0;
+
+  persons = [
+    {name:'Usman',email:'usman@angular.com',age:21},
+    {name:'Yasir',email:'yasir@angular.com',age:20},
+    {name:'Abdul Rafay',email:'arm@angular.com',age:24},
+  ]
 
   randomNumber() {
-    this.ParentsData = Math.floor(Math.random()*10)
+    this.ParentsData = Math.floor(Math.random()*100)
   }
 
   constructor() { }
