@@ -10,4 +10,5 @@ export class AppComponent {
   count=0;
   show=true;
   color='';
+  inputData:any;
 }
