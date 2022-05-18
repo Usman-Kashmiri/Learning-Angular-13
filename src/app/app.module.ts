@@ -14,6 +14,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { SecondChildComponent } from './second-child/second-child.component';
+import { ThirdChildComponent } from './third-child/third-child.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SecondChildComponent } from './second-child/second-child.component';
     TwoWayBindingComponent,
     ParentComponent,
     ChildComponent,
-    SecondChildComponent
+    SecondChildComponent,
+    ThirdChildComponent
   ],
   imports: [
     BrowserModule,

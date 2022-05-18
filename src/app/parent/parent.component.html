@@ -4,6 +4,7 @@
 <br>
 <button (click)="randomNumber()">Click me</button>
 <br>
+<h2 class="component-heading">Resuing Child Component in Parent Component</h2>
 <br>
 <ul>
     <li *ngFor="let person of persons">
@@ -11,3 +12,9 @@
         <br>
     </li>
 </ul>
+
+<!-- It's Important to use $event here -->
+
+<app-third-child (updateFunction)="updateData($event)"></app-third-child>
+
+<h2>{{data}}</h2>
