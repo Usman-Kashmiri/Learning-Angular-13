@@ -10,6 +10,9 @@
 
     <h3>Type something to get instant value without submit button:</h3>
 
+    <!-- The #myInput over here is known as Template Refernce Variable and
+        we can get all properties of all properties of a Input field with the help of it... -->
+
     <input type="text" #myInput (keyup)="myInput.value">
 
     <h2>{{myInput.value}}</h2>
@@ -103,8 +106,11 @@
     <app-two-way-binding></app-two-way-binding>
 
     <!-- Parent Component -->
+    <br>
 
     <app-parent></app-parent>
+
+    <br>
 
     <!-- Two Way Binding -->
 
@@ -118,4 +124,16 @@
 
     <h2>{{inputData}}</h2>
 
+    <br>
+
+    <h2 class="component-heading">Pipes in Angular</h2>
+    <br>
+    <h3>Transformed this in lower case using lowercase pipe : {{ lowerCaseData | lowercase }}</h3>
+    <h3>Transformed this in upper case using uppercase pipe : {{ upperCaseData | uppercase }}</h3>
+    <h3>Today is : {{ dayToday | date : 'EEEE' }}. Found which day is today using date pipe </h3>
+    <h3>My bank balance is : {{ 150 | currency : 'Rs '}}</h3>
+    <h3>Number pipe : {{ 3000 | number : '.2' }}</h3>
+    <h3>JSON pipe : {{persons | json | uppercase}}</h3>
+    <h3>$100 are equals to {{ 100  | uSDtoPKR : 195.65 | currency : 'Rs ' }}</h3>
+    <div><p myTheme tsize="2rem" bcolor="red" tcolor="black">Some text to be highlighted!</p></div>
 </div>

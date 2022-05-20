@@ -15,6 +15,8 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { SecondChildComponent } from './second-child/second-child.component';
 import { ThirdChildComponent } from './third-child/third-child.component';
+import { USDtoPKRPipe } from './custom-pipes/usdto-pkr.pipe';
+import { CustomBgDirectivesDirective } from './myCustomDirectives/custom-bg-directives.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ThirdChildComponent } from './third-child/third-child.component';
     ParentComponent,
     ChildComponent,
     SecondChildComponent,
-    ThirdChildComponent
+    ThirdChildComponent,
+    USDtoPKRPipe,
+    CustomBgDirectivesDirective
   ],
   imports: [
     BrowserModule,
